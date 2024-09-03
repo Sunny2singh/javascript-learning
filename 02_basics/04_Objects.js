@@ -44,13 +44,38 @@ const user = [
     }
 ]
 user[1].email
-console.log(instaUser);
-console.log(Object.keys(instaUser));
-console.log(Object.values(instaUser));
-console.log(Object.entries(instaUser)); // entries coverts into array and first show key and then value for e.g: name, `sunny`,
+//console.log(instaUser);
+//console.log(Object.keys(instaUser));
+//console.log(Object.values(instaUser));
+//console.log(Object.entries(instaUser)); // entries coverts into array and first show key and then value for e.g: name, `sunny`,
 
-console.log(instaUser.hasOwnProperty(`isUserloggedIn`));
+//console.log(instaUser.hasOwnProperty(`isUserloggedIn`)); 
 
+//+++++++++++ Destructure+++++++++++++++
 
+const course = {
+    name: "js in hindi",
+    Price: "999",
+    courseInstructor:"HiteshChoudhary"
+}
 
+//console.log(cousre.Price);
 
+const {courseInstructor :instructor} = course
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+/*{
+    name: "sunny",
+    course:"js in hindi"
+    price: "absolute free"
+}  this is the example of JSON */ 
+
+// THE DIFFERENCE BETWEEN OBJECT AND JSON INS OBJECT HAS NAME AND JSON DON'T HAVE NAME FOR E.G: const couse = {}, {}
+
+[
+    {},
+    {},
+    {}
+] //API  FROM INTRODUCTION VIDEO https://www.youtube.com/watch?v=AViTh83k-IE&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=18
